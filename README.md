@@ -6,5 +6,5 @@ Histopathological image analysis, including biopsy image segmentation and classi
 
 This Model aims to achieve highly accurate cell segmentation and classification - to aid the study of histopathology .
 
-## project Report
+## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
