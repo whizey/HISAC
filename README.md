@@ -41,11 +41,11 @@ Preprocessing Steps:
 * Efficient in segmentation but limited at boundary delineation and overlapping nuclei separation.
 
 ## BASNet-Inspired Model (Improved)
-Incorporates residual and attention blocks for better feature extraction.
+* Incorporates residual and attention blocks for better feature extraction.
 
-Uses dense decoder refinement to preserve edges and small details.
+* Uses dense decoder refinement to preserve edges and small details.
 
-Designed for boundary-aware learning, improving precision and edge quality.
+* Designed for boundary-aware learning, improving precision and edge quality.
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
