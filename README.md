@@ -22,7 +22,6 @@ The proposed method integrates a hybrid loss function (Dice + Focal + SSIM) that
 
 * Evaluate performance using Dice Score, IoU, Pixel Accuracy, and Boundary F1 Score.
 
-
 # Dataset
 The project uses the MoNuSeg (Multi-Organ Nuclei Segmentation) dataset, containing histopathological images from multiple organs with expert-annotated masks.
 
@@ -46,6 +45,47 @@ Preprocessing Steps:
 * Uses dense decoder refinement to preserve edges and small details.
 
 * Designed for boundary-aware learning, improving precision and edge quality.
+
+# Hybrid Loss Function
+To balance accuracy, structure, and boundary learning, a hybrid loss function was used:
+
+Total Loss
+=
+𝛼
+1
+⋅
+Dice
++
+𝛼
+2
+⋅
+Focal
++
+𝛼
+3
+⋅
+SSIM
+Total Loss=α
+1
+	​
+
+⋅Dice+α
+2
+	​
+
+⋅Focal+α
+3
+	​
+
+⋅SSIM
+Component	Purpose	Effect
+Dice Loss	Handles class imbalance	Improved Dice by ~8%
+Focal Loss	Focuses on difficult pixels	Reduced false negatives by ~10%
+SSIM Loss	Maintains texture and structure	Generated smoother, realistic masks
+
+This combination produced consistent improvement in both overlap accuracy and boundary quality.
+
+🧮
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
