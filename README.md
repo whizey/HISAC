@@ -22,5 +22,17 @@ The proposed method integrates a hybrid loss function (Dice + Focal + SSIM) that
 
 * Evaluate performance using Dice Score, IoU, Pixel Accuracy, and Boundary F1 Score.
 
+
+# Dataset
+The project uses the MoNuSeg (Multi-Organ Nuclei Segmentation) dataset, containing histopathological images from multiple organs with expert-annotated masks.
+
+Preprocessing Steps:
+
+* Normalization of pixel intensity values (0–1 scale).
+
+* Resizing of all images and masks to 256×256 pixels.
+
+* Data augmentation using rotation, flipping, and color adjustments for generalization.
+
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
