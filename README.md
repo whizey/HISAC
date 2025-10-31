@@ -81,6 +81,34 @@ These metrics provide a comprehensive measure of **overlap accuracy**, **boundar
 | **Boundary F1** | 0.75 | **0.82** | **+9.3%** |
 | **Pixel Accuracy** | 0.18 | 0.22 | **+22%** |
 
+## Training Configuration  
+
+The model was trained using the TensorFlow/Keras deep learning framework.  
+Training parameters were selected to ensure stable convergence and prevent overfitting.  
+Early stopping was applied when validation loss stopped improving.  
+
+| **Parameter** | **Value / Description** |
+|----------------|--------------------------|
+| **Framework** | TensorFlow / Keras |
+| **Optimizer** | Adam |
+| **Learning Rate** | 3 × 10⁻⁴ |
+| **Loss Function** | Hybrid Loss (Dice + Focal + SSIM) |
+| **Batch Size** | 8 – 16 |
+| **Epochs** | 50 (early stopped at 43) |
+| **Scheduler** | ReduceLROnPlateau |
+| **Hardware** | NVIDIA GPU (8–12 GB VRAM) |
+
+## Visualization
+<img width="2368" height="780" alt="image" src="https://github.com/user-attachments/assets/80dd8bdc-a549-4ed1-840b-c30b8208e06e" />
+
+## Conclusion  
+
+The study demonstrated that deep learning models can effectively segment nuclei in histopathological images.  
+The **BASNet-inspired boundary-aware model** achieved better accuracy than U-Net,  
+showing improvements of **+8.6% in Dice**, **+10.3% in IoU**, and **+9.3% in Boundary F1 Score**.  
+The **Hybrid Loss Function (Dice + Focal + SSIM)** enhanced structure preservation and boundary precision.  
+Overall, the proposed approach produced smoother, well-defined segmentation masks suitable for computational pathology applications.
+
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
