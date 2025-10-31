@@ -14,11 +14,11 @@ U-Net as the baseline encoder–decoder model, and BASNet-inspired model as a bo
 The proposed method integrates a hybrid loss function (Dice + Focal + SSIM) that improves both overlap accuracy and boundary sharpness by reducing segmentation errors in overlapping nuclei.
 
 # Objectives
-* Develop a deep learning-based segmentation system for histopathological nuclei.
+* Developing a deep learning-based segmentation system for histopathological nuclei.
 
-* Address boundary blurring and class imbalance using hybrid loss optimization.
+* Addressing boundary blurring and class imbalance using hybrid loss optimization.
 
-* Compare U-Net and BASNet-based architectures quantitatively.
+* Comparing U-Net and BASNet-based architectures quantitatively.
 
 * Evaluate performance using Dice Score, IoU, Pixel Accuracy, and Boundary F1 Score.
 
@@ -33,6 +33,19 @@ Preprocessing Steps:
 * Resizing of all images and masks to 256×256 pixels.
 
 * Data augmentation using rotation, flipping, and color adjustments for generalization.
+
+# Model Architecture
+## U-Net
+* Encoder–decoder CNN architecture with skip connections.
+
+* Efficient in segmentation but limited at boundary delineation and overlapping nuclei separation.
+
+## BASNet-Inspired Model (Improved)
+Incorporates residual and attention blocks for better feature extraction.
+
+Uses dense decoder refinement to preserve edges and small details.
+
+Designed for boundary-aware learning, improving precision and edge quality.
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
