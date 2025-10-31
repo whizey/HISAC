@@ -15,8 +15,11 @@ The proposed method integrates a hybrid loss function (Dice + Focal + SSIM) that
 
 # Objectives
 > Develop a deep learning-based segmentation system for histopathological nuclei.
+
 > Address boundary blurring and class imbalance using hybrid loss optimization.
+
 > Compare U-Net and BASNet-based architectures quantitatively.
+
 > Evaluate performance using Dice Score, IoU, Pixel Accuracy, and Boundary F1 Score.
 
 ## Project Report
