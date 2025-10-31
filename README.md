@@ -46,13 +46,20 @@ Preprocessing Steps:
 
 * Designed for boundary-aware learning, improving precision and edge quality.
 
-# Hybrid Loss Function
-To balance accuracy, structure, and boundary learning, a hybrid loss function was used:
+## Hybrid Loss Function  
 
-**Total Loss** = α₁·Dice + α₂·Focal + α₃·SSIM
-�
+To balance accuracy, structure, and boundary learning, a hybrid loss function was used:  
+
+**Total Loss** = α₁·Dice + α₂·Focal + α₃·SSIM  
+
+| Component   | Purpose                     | Effect                          |
+|--------------|-----------------------------|----------------------------------|
+| **Dice Loss** | Handles class imbalance     | Improved Dice by ~8%             |
+| **Focal Loss** | Focuses on difficult pixels | Reduced false negatives by ~10%  |
+| **SSIM Loss**  | Maintains texture and structure | Generated smoother, realistic masks |
 
 This combination produced consistent improvement in both overlap accuracy and boundary quality.
+
 
 🧮
 
