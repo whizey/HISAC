@@ -72,6 +72,15 @@ These metrics provide a comprehensive measure of **overlap accuracy**, **boundar
 | **Pixel Accuracy** | Computes the ratio of correctly classified pixels to total pixels. | Determines overall prediction correctness. |
 | **Boundary F1 Score** | Compares the predicted and ground truth boundaries to assess edge precision. | Evaluates boundary sharpness and refinement. |
 
+## Quantitative Results  
+
+| **Metric** | **U-Net** | **BASNet (Improved)** | **Gain** |
+|-------------|-----------|-----------------------|-----------|
+| **Dice** | 0.70 | **0.76** | **+8.6%** |
+| **IoU** | 0.68 | **0.75** | **+10.3%** |
+| **Boundary F1** | 0.75 | **0.82** | **+9.3%** |
+| **Pixel Accuracy** | 0.18 | 0.22 | **+22%** |
+
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
