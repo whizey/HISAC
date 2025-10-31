@@ -11,5 +11,8 @@ It compares a U-Net baseline with a BASNet-inspired boundary-aware model, design
 We introduce a hybrid loss (Dice + Focal + SSIM) that balances overlap accuracy, hard-pixel learning, and structural consistency.
 The model achieves consistent improvements across Dice, IoU, and Boundary F1 metrics.
 
+#Dataset Used — MoNuSeg
+The 
+
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
