@@ -60,8 +60,18 @@ To balance accuracy, structure, and boundary learning, a hybrid loss function wa
 
 This combination produced consistent improvement in both overlap accuracy and boundary quality.
 
+## Evaluation Metrics  
 
-🧮
+The performance of the segmentation models was evaluated using standard quantitative metrics commonly used in biomedical image segmentation.  
+These metrics provide a comprehensive measure of **overlap accuracy**, **boundary precision**, and **pixel-wise correctness** between the predicted and ground truth masks.  
+
+| **Metric** | **Description** | **Purpose** |
+|-------------|----------------|--------------|
+| **Dice Coefficient (DSC)** | Measures the overlap between predicted and ground truth nuclei. | Indicates segmentation accuracy and similarity. |
+| **IoU (Jaccard Index)** | Calculates the intersection over union of predicted and actual segmented regions. | Evaluates region-level precision. |
+| **Pixel Accuracy** | Computes the ratio of correctly classified pixels to total pixels. | Determines overall prediction correctness. |
+| **Boundary F1 Score** | Compares the predicted and ground truth boundaries to assess edge precision. | Evaluates boundary sharpness and refinement. |
+
 
 ## Project Report
 [Histopathological Image Segmentation Report.pdf](https://github.com/user-attachments/files/23002434/Histopathological.Image.Segmentation.Report.pdf)
